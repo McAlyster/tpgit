@@ -7,7 +7,13 @@ from lib import ecrireXFois
 
 
 def main(argv):
-    ecrireXFois(int(argv[0]), argv[1])
+    if len(argv) < 2 or not argv[0].isdigit():
+        print "Erreur!"
+        print "Usage: python hello.py nbfois message"
+        print "\n- nbfois : nombre de repetitions"
+        print "- message : message a afficher"
+    else:
+        ecrireXFois(int(argv[0]), argv[1])
 
 
 if __name__ == '__main__':
