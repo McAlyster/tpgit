@@ -1,7 +1,7 @@
 def ecrireXFois(x, chaine):
     for i in range(x):
-	ecrire(chaine)
+	ecrire(chaine, i+1)
 
-def ecrire(chaine):
-    print chaine
+def ecrire(chaine, index):
+    print str(index) + " -> " + chaine
 
