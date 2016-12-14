@@ -1,3 +1,4 @@
 from lib import ecrireXFois
 
-ecrireXFois(3, "Hello world!")
+if __name__ == '__main__':
+    ecrireXFois(3, "Hello world!")
