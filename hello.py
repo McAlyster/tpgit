@@ -6,12 +6,16 @@ import sys
 from lib import ecrireXFois
 
 
+def print_usage():
+    print "Usage: python hello.py nbfois message"
+    print "\n- nbfois : nombre de repetitions"
+    print "- message : message a afficher"
+
+
 def main(argv):
     if len(argv) < 2 or not argv[0].isdigit():
         print "Erreur!"
-        print "Usage: python hello.py nbfois message"
-        print "\n- nbfois : nombre de repetitions"
-        print "- message : message a afficher"
+	print_usage()
     else:
         ecrireXFois(int(argv[0]), argv[1])
 
