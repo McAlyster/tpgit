@@ -2,3 +2,8 @@
 
 Programme qui dit bonjour une ou plusieurs fois
 
+Usage: python hello.py nbfois message
+
+nbfois : nombre de répétitions
+message : message à afficher
+
