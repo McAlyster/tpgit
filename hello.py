@@ -1,5 +1,9 @@
+def ecrireXFois(x, chaine):
+    for i in range(x):
+	ecrire(chaine)
+
 def ecrire(chaine):
     print chaine
 
-ecrire("Hello world!")
+ecrireXFois(3, "Hello world!")
 
